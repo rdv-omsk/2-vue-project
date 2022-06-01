@@ -83,10 +83,11 @@ export default {
         const ad = {
           title: this.title,
           description: this.description,
-          promo: this.promo
+          promo: this.promo,
+          imageSrc: 'https://pic.rutubelist.ru/video/af/49/af498ebc99a1ff124517255518ba9af2.jpg'
         }
 
-        console.log(ad)
+        this.$store.dispatch('createAd', ad)
       }
     }
   }
