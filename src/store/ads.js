@@ -32,7 +32,7 @@ export default {
     ]
   },
   mutations: {
-    createAd(state, payload) {
+    createAd (state, payload) {
       state.ads.push(payload)
     }
   },
@@ -57,8 +57,8 @@ export default {
     },
     adById (state) {
       return adId => {
-  return state.ads.find(ad => ad.id === adId)
-}
+        return state.ads.find(ad => ad.id === adId)
+      }
     }
   }
 }

@@ -29,11 +29,11 @@
           :key="ad.id"
         >
           <v-card>
-            <v-img
+            <v-card-media
               :src="ad.imageSrc"
               height="200px"
             >
-            </v-img>
+            </v-card-media>
 
             <v-card-title primary-title>
               <div>
